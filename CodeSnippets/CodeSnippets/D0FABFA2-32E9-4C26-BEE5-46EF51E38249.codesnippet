@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>drop_down_xml</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>TopLevel</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>&lt;?xml version="1.0" encoding="UTF-8" standalone="no"?&gt;
+&lt;document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r"&gt;
+    &lt;dependencies&gt;
+        &lt;deployment identifier="iOS"/&gt;
+        &lt;plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/&gt;
+        &lt;capability name="Constraints to layout margins" minToolsVersion="6.0"/&gt;
+    &lt;/dependencies&gt;
+    &lt;scenes&gt;
+        &lt;!--View Controller--&gt;
+        &lt;scene sceneID="tne-QT-ifu"&gt;
+            &lt;objects&gt;
+                &lt;viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DropDown" customModuleProvider="target" sceneMemberID="viewController"&gt;
+                    &lt;layoutGuides&gt;
+                        &lt;viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/&gt;
+                        &lt;viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/&gt;
+                    &lt;/layoutGuides&gt;
+                    &lt;view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC"&gt;
+                        &lt;rect key="frame" x="0.0" y="0.0" width="600" height="600"/&gt;
+                        &lt;autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/&gt;
+                        &lt;subviews&gt;
+                            &lt;stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="xmZ-Iu-2yB"&gt;
+                                &lt;rect key="frame" x="258" y="65" width="146" height="30"/&gt;
+                                &lt;subviews&gt;
+                                    &lt;button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j3r-UJ-2aa"&gt;
+                                        &lt;rect key="frame" x="0.0" y="0.0" width="146" height="30"/&gt;
+                                        &lt;color key="backgroundColor" red="1" green="0.68737248342497126" blue="0.95969902241687144" alpha="1" colorSpace="calibratedRGB"/&gt;
+                                        &lt;constraints&gt;
+                                            &lt;constraint firstAttribute="width" constant="200" id="ISQ-2I-VDy"/&gt;
+                                            &lt;constraint firstAttribute="height" constant="30" id="pCe-79-aO4"/&gt;
+                                        &lt;/constraints&gt;
+                                        &lt;fontDescription key="fontDescription" type="system" pointSize="27"/&gt;
+                                        &lt;state key="normal" title="Select a city"/&gt;
+                                        &lt;variation key="default"&gt;
+                                            &lt;mask key="constraints"&gt;
+                                                &lt;exclude reference="ISQ-2I-VDy"/&gt;
+                                            &lt;/mask&gt;
+                                        &lt;/variation&gt;
+                                        &lt;variation key="widthClass=compact" misplaced="YES"&gt;
+                                            &lt;rect key="frame" x="0.0" y="0.0" width="200" height="150"/&gt;
+                                            &lt;mask key="constraints"&gt;
+                                                &lt;include reference="ISQ-2I-VDy"/&gt;
+                                            &lt;/mask&gt;
+                                        &lt;/variation&gt;
+                                        &lt;connections&gt;
+                                            &lt;action selector="handleSelection:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sVq-ci-deY"/&gt;
+                                        &lt;/connections&gt;
+                                    &lt;/button&gt;
+                                    &lt;button hidden="YES" opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FCz-gL-4kS"&gt;
+                                        &lt;rect key="frame" x="48" y="30" width="51" height="0.0"/&gt;
+                                        &lt;color key="backgroundColor" red="0.73004943666906419" green="1" blue="0.70203048440431259" alpha="1" colorSpace="calibratedRGB"/&gt;
+                                        &lt;constraints&gt;
+                                            &lt;constraint firstAttribute="width" constant="200" id="Quw-bB-xxR"/&gt;
+                                            &lt;constraint firstAttribute="height" constant="30" id="sIA-2l-yTJ"/&gt;
+                                        &lt;/constraints&gt;
+                                        &lt;state key="normal" title="Kolkata"/&gt;
+                                        &lt;variation key="default"&gt;
+                                            &lt;mask key="constraints"&gt;
+                                                &lt;exclude reference="Quw-bB-xxR"/&gt;
+                                            &lt;/mask&gt;
+                                        &lt;/variation&gt;
+                                        &lt;variation key="widthClass=compact" misplaced="YES"&gt;
+                                            &lt;rect key="frame" x="0.0" y="150" width="200" height="0.0"/&gt;
+                                            &lt;mask key="constraints"&gt;
+                                                &lt;include reference="Quw-bB-xxR"/&gt;
+                                            &lt;/mask&gt;
+                                        &lt;/variation&gt;
+                                        &lt;connections&gt;
+                                            &lt;action selector="cityTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tf2-Tb-2qz"/&gt;
+                                        &lt;/connections&gt;
+                                    &lt;/button&gt;
+                                    &lt;button hidden="YES" opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7eP-IE-Ryc"&gt;
+                                        &lt;rect key="frame" x="35" y="30" width="76" height="0.0"/&gt;
+                                        &lt;color key="backgroundColor" red="0.73004943666906419" green="1" blue="0.70203048440431259" alpha="1" colorSpace="calibratedRGB"/&gt;
+                                        &lt;constraints&gt;
+                                            &lt;constraint firstAttribute="height" constant="30" id="84O-rf-7fU"/&gt;
+                                            &lt;constraint firstAttribute="width" constant="200" id="bI9-9O-z7Q"/&gt;
+                                        &lt;/constraints&gt;
+                                        &lt;state key="normal" title="Hyderabad"/&gt;
+                                        &lt;variation key="default"&gt;
+                                            &lt;mask key="constraints"&gt;
+                                                &lt;exclude reference="bI9-9O-z7Q"/&gt;
+                                            &lt;/mask&gt;
+                                        &lt;/variation&gt;
+                                        &lt;variation key="widthClass=compact" misplaced="YES"&gt;
+                                            &lt;rect key="frame" x="0.0" y="150" width="200" height="0.0"/&gt;
+                                            &lt;mask key="constraints"&gt;
+                                                &lt;include reference="bI9-9O-z7Q"/&gt;
+                                            &lt;/mask&gt;
+                                        &lt;/variation&gt;
+                                        &lt;connections&gt;
+                                            &lt;action selector="cityTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cfh-ql-HMo"/&gt;
+                                        &lt;/connections&gt;
+                                    &lt;/button&gt;
+                                    &lt;button hidden="YES" opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ho-p2-14z"&gt;
+                                        &lt;rect key="frame" x="45" y="30" width="57" height="0.0"/&gt;
+                                        &lt;color key="backgroundColor" red="0.73004943666906419" green="1" blue="0.70203048440431259" alpha="1" colorSpace="calibratedRGB"/&gt;
+                                        &lt;constraints&gt;
+                                            &lt;constraint firstAttribute="width" constant="200" id="F4b-tS-zEY"/&gt;
+                                            &lt;constraint firstAttribute="height" constant="30" id="YdN-q5-Hxy"/&gt;
+                                        &lt;/constraints&gt;
+                                        &lt;state key="normal" title="Chennai"/&gt;
+                                        &lt;variation key="default"&gt;
+                                            &lt;mask key="constraints"&gt;
+                                                &lt;exclude reference="F4b-tS-zEY"/&gt;
+                                            &lt;/mask&gt;
+                                        &lt;/variation&gt;
+                                        &lt;variation key="widthClass=compact" misplaced="YES"&gt;
+                                            &lt;rect key="frame" x="0.0" y="150" width="200" height="0.0"/&gt;
+                                            &lt;mask key="constraints"&gt;
+                                                &lt;include reference="F4b-tS-zEY"/&gt;
+                                            &lt;/mask&gt;
+                                        &lt;/variation&gt;
+                                        &lt;connections&gt;
+                                            &lt;action selector="cityTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9gP-Cw-LV4"/&gt;
+                                        &lt;/connections&gt;
+                                    &lt;/button&gt;
+                                    &lt;button hidden="YES" opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hqL-OB-FRg"&gt;
+                                        &lt;rect key="frame" x="43" y="30" width="61" height="0.0"/&gt;
+                                        &lt;color key="backgroundColor" red="0.73004943666906419" green="1" blue="0.70203048440431259" alpha="1" colorSpace="calibratedRGB"/&gt;
+                                        &lt;constraints&gt;
+                                            &lt;constraint firstAttribute="width" constant="200" id="BZt-eX-Ng9"/&gt;
+                                            &lt;constraint firstAttribute="height" constant="30" id="nuE-1e-tvl"/&gt;
+                                        &lt;/constraints&gt;
+                                        &lt;state key="normal" title="Banglore"/&gt;
+                                        &lt;variation key="default"&gt;
+                                            &lt;mask key="constraints"&gt;
+                                                &lt;exclude reference="BZt-eX-Ng9"/&gt;
+                                            &lt;/mask&gt;
+                                        &lt;/variation&gt;
+                                        &lt;variation key="widthClass=compact" misplaced="YES"&gt;
+                                            &lt;rect key="frame" x="0.0" y="150" width="200" height="0.0"/&gt;
+                                            &lt;mask key="constraints"&gt;
+                                                &lt;include reference="BZt-eX-Ng9"/&gt;
+                                            &lt;/mask&gt;
+                                        &lt;/variation&gt;
+                                        &lt;connections&gt;
+                                            &lt;action selector="cityTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tPW-Nn-Bl1"/&gt;
+                                        &lt;/connections&gt;
+                                    &lt;/button&gt;
+                                &lt;/subviews&gt;
+                                &lt;rect key="contentStretch" x="0.80000000000000004" y="0.40000000000000002" width="1" height="1"/&gt;
+                                &lt;variation key="heightClass=compact-widthClass=compact" ambiguous="YES" misplaced="YES"&gt;
+                                    &lt;rect key="frame" x="141" y="40" width="146" height="150"/&gt;
+                                &lt;/variation&gt;
+                            &lt;/stackView&gt;
+                        &lt;/subviews&gt;
+                        &lt;color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/&gt;
+                        &lt;constraints&gt;
+                            &lt;constraint firstAttribute="trailingMargin" secondItem="xmZ-Iu-2yB" secondAttribute="trailing" constant="80" id="OEa-4E-Olr"/&gt;
+                            &lt;constraint firstAttribute="trailingMargin" secondItem="xmZ-Iu-2yB" secondAttribute="trailing" constant="80" id="Shd-ah-C8r"/&gt;
+                            &lt;constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="xmZ-Iu-2yB" secondAttribute="bottom" constant="394" id="asc-uT-OUS"/&gt;
+                            &lt;constraint firstItem="xmZ-Iu-2yB" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="36" id="d8P-UG-rWN"/&gt;
+                            &lt;constraint firstItem="xmZ-Iu-2yB" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="36" id="fYy-ro-VRZ"/&gt;
+                            &lt;constraint firstItem="xmZ-Iu-2yB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="80" id="h9z-Sc-Qit"/&gt;
+                            &lt;constraint firstItem="xmZ-Iu-2yB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="80" id="ncL-l6-1Fo"/&gt;
+                            &lt;constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="xmZ-Iu-2yB" secondAttribute="bottom" constant="394" id="wBR-YD-abC"/&gt;
+                        &lt;/constraints&gt;
+                        &lt;variation key="default"&gt;
+                            &lt;mask key="constraints"&gt;
+                                &lt;exclude reference="OEa-4E-Olr"/&gt;
+                                &lt;exclude reference="Shd-ah-C8r"/&gt;
+                                &lt;exclude reference="d8P-UG-rWN"/&gt;
+                                &lt;exclude reference="fYy-ro-VRZ"/&gt;
+                                &lt;exclude reference="h9z-Sc-Qit"/&gt;
+                                &lt;exclude reference="ncL-l6-1Fo"/&gt;
+                                &lt;exclude reference="asc-uT-OUS"/&gt;
+                                &lt;exclude reference="wBR-YD-abC"/&gt;
+                            &lt;/mask&gt;
+                        &lt;/variation&gt;
+                        &lt;variation key="widthClass=compact"&gt;
+                            &lt;mask key="constraints"&gt;
+                                &lt;include reference="OEa-4E-Olr"/&gt;
+                                &lt;include reference="Shd-ah-C8r"/&gt;
+                                &lt;include reference="d8P-UG-rWN"/&gt;
+                                &lt;include reference="fYy-ro-VRZ"/&gt;
+                                &lt;include reference="h9z-Sc-Qit"/&gt;
+                                &lt;include reference="ncL-l6-1Fo"/&gt;
+                                &lt;include reference="asc-uT-OUS"/&gt;
+                                &lt;include reference="wBR-YD-abC"/&gt;
+                            &lt;/mask&gt;
+                        &lt;/variation&gt;
+                    &lt;/view&gt;
+                    &lt;connections&gt;
+                        &lt;outletCollection property="cityButtons" destination="FCz-gL-4kS" collectionClass="NSMutableArray" id="1zQ-Dt-iDb"/&gt;
+                        &lt;outletCollection property="cityButtons" destination="7eP-IE-Ryc" collectionClass="NSMutableArray" id="oFr-fg-fu7"/&gt;
+                        &lt;outletCollection property="cityButtons" destination="1ho-p2-14z" collectionClass="NSMutableArray" id="GkR-Gk-Dt0"/&gt;
+                        &lt;outletCollection property="cityButtons" destination="hqL-OB-FRg" collectionClass="NSMutableArray" id="oD4-1i-cAd"/&gt;
+                    &lt;/connections&gt;
+                &lt;/viewController&gt;
+                &lt;placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/&gt;
+            &lt;/objects&gt;
+        &lt;/scene&gt;
+    &lt;/scenes&gt;
+&lt;/document&gt;
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>D0FABFA2-32E9-4C26-BEE5-46EF51E38249</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.InterfaceBuilder</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>The length of the search box should be the largest possible size that will fit on the screen</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Drop Down xml</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

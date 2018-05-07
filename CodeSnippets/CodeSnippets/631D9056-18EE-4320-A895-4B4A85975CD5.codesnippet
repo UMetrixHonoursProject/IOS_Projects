@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>floating labels</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>StringOrComment</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>    CGRect frame = CGRectMake(20.f, 20.f, 273.f, 30.f);
+    RPFloatingPlaceholderTextField *flTextField = [[RPFloatingPlaceholderTextField alloc] initWithFrame:frame];
+    flTextField.floatingLabelActiveTextColor = [UIColor blueColor];
+    flTextField.floatingLabelInactiveTextColor = [UIColor grayColor];
+    flTextField.placeholder = @"This is a single-line text field";
+    flTextField.font = [UIFont fontWithName:@"Helvetica" size:16.f];
+    //flTextField.animationDirection = RPFloatingPlaceholderAnimateDownward; // You can change animation direction
+    //flTextField.text = @"I love lamp."; // You can set text after it's been initialized
+    [self.view addSubview:flTextField];
+     #import "RPFloatingPlaceholderTextField.h"
+     #import "RPFloatingPlaceholderTextView.h"</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>631D9056-18EE-4320-A895-4B4A85975CD5</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Form labels are either above form fields or are floating labels</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Floating Labels</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

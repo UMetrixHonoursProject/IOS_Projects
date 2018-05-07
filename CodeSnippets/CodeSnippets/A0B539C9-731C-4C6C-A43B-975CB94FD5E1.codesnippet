@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>search_innavigation</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>    @IBOutlet weak var leadingConstraint: NSLayoutConstraint!
+    var menuShowing = false
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        menuView.layer.shadowOpacity = 1
+        menuView.layer.shadowRadius = 7
+        // Do any additional setup after loading the view, typically from a nib.
+    }
+
+ 
+    @IBAction func openMenu(sender: AnyObject) {
+        if (menuShowing) {
+         leadingConstraint.constant = -160
+        } else{
+            leadingConstraint.constant = -20
+            UIView.animateWithDuration(0.3, animations: {
+            self.view.layoutIfNeeded()
+            })
+        }
+        menuShowing = !menuShowing
+    }</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>A0B539C9-731C-4C6C-A43B-975CB94FD5E1</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>If the search tool is inside the navigation menu, place it at the very top of that menu</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Search Tool in Navigation Bar</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

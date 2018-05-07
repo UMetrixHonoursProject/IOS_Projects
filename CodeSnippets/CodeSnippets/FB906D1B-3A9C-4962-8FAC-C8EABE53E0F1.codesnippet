@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>drop_down</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>
+    @IBOutlet var cityButtons: [UIButton]!
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view, typically from a nib.
+    }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+
+    @IBAction func handleSelection(sender: UIButton) {
+        cityButtons.forEach{ (button) in
+            UIView.animateWithDuration(0.3, animations: {
+                button.hidden = !button.hidden
+            })
+        
+    }
+    }
+        @IBAction func cityTapped(sender: UIButton) {
+    }
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>FB906D1B-3A9C-4962-8FAC-C8EABE53E0F1</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>The length of the search box should be the largest possible size that will fit on the screen</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Drop Down Menu</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

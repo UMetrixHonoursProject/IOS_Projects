@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>show_hide</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>  UIButton *hideShow = (UIButton *)self.password.rightView;
+    if (!self.password.secureTextEntry)
+    {
+        self.password.secureTextEntry = YES;
+        [hideShow setTitle:@"SHOW" forState:UIControlStateNormal];
+    }
+    else
+    {
+        self.password.secureTextEntry = NO;
+        [hideShow setTitle:@"HIDE" forState:UIControlStateNormal];
+    }
+    [self.password becomeFirstResponder];
+}
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>15773A8D-0DA9-4823-AB38-44F627DF4AAC</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>show_hide_password</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
