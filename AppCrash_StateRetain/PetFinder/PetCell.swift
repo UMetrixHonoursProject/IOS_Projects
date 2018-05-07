@@ -1,0 +1,41 @@
+
+
+import UIKit
+
+class PetCell: UICollectionViewCell {
+  
+  @IBOutlet weak var profileImageView: UIImageView!
+  
+  override var selected: Bool {
+    didSet {
+      profileImageView.alpha = selected ? 0.5 : 1.0
+    }
+  }
+  
+  private var currentPet: Pet!
+  private var currentPetId = 0
+
+  var petId: Int {
+    get {
+      return currentPetId
+    }
+    set(newPetId) {
+      currentPetId = newPetId
+      currentPet = MatchedPetsManager.sharedManager.petForId(petId)!
+      
+      profileImageView.image = UIImage(data: currentPet.imageData)
+    }
+  }
+  
+  override func prepareForReuse() {
+    profileImageView.image = UIImage(data: currentPet.imageData)
+  }
+  
+  override func layoutSubviews() {
+    profileImageView.image = UIImage(data: currentPet.imageData)
+
+    layer.borderColor = UIColor.blackColor().CGColor
+    layer.borderWidth = 2.0
+    layer.cornerRadius = 4.0
+  }
+}
