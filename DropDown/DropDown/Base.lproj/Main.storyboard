@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DropDown" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="xmZ-Iu-2yB">
+                                <rect key="frame" x="258" y="65" width="146" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j3r-UJ-2aa">
+                                        <rect key="frame" x="0.0" y="0.0" width="146" height="30"/>
+                                        <color key="backgroundColor" red="1" green="0.68737248342497126" blue="0.95969902241687144" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="ISQ-2I-VDy"/>
+                                            <constraint firstAttribute="height" constant="30" id="pCe-79-aO4"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                        <state key="normal" title="Select a city"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="ISQ-2I-VDy"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="widthClass=compact" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="0.0" width="200" height="150"/>
+                                            <mask key="constraints">
+                                                <include reference="ISQ-2I-VDy"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <action selector="handleSelection:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sVq-ci-deY"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FCz-gL-4kS">
+                                        <rect key="frame" x="48" y="30" width="51" height="0.0"/>
+                                        <color key="backgroundColor" red="0.73004943666906419" green="1" blue="0.70203048440431259" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="Quw-bB-xxR"/>
+                                            <constraint firstAttribute="height" constant="30" id="sIA-2l-yTJ"/>
+                                        </constraints>
+                                        <state key="normal" title="Kolkata"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="Quw-bB-xxR"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="widthClass=compact" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="150" width="200" height="0.0"/>
+                                            <mask key="constraints">
+                                                <include reference="Quw-bB-xxR"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <action selector="cityTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tf2-Tb-2qz"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7eP-IE-Ryc">
+                                        <rect key="frame" x="35" y="30" width="76" height="0.0"/>
+                                        <color key="backgroundColor" red="0.73004943666906419" green="1" blue="0.70203048440431259" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="84O-rf-7fU"/>
+                                            <constraint firstAttribute="width" constant="200" id="bI9-9O-z7Q"/>
+                                        </constraints>
+                                        <state key="normal" title="Hyderabad"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="bI9-9O-z7Q"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="widthClass=compact" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="150" width="200" height="0.0"/>
+                                            <mask key="constraints">
+                                                <include reference="bI9-9O-z7Q"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <action selector="cityTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cfh-ql-HMo"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ho-p2-14z">
+                                        <rect key="frame" x="45" y="30" width="57" height="0.0"/>
+                                        <color key="backgroundColor" red="0.73004943666906419" green="1" blue="0.70203048440431259" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="F4b-tS-zEY"/>
+                                            <constraint firstAttribute="height" constant="30" id="YdN-q5-Hxy"/>
+                                        </constraints>
+                                        <state key="normal" title="Chennai"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="F4b-tS-zEY"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="widthClass=compact" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="150" width="200" height="0.0"/>
+                                            <mask key="constraints">
+                                                <include reference="F4b-tS-zEY"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <action selector="cityTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9gP-Cw-LV4"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hqL-OB-FRg">
+                                        <rect key="frame" x="43" y="30" width="61" height="0.0"/>
+                                        <color key="backgroundColor" red="0.73004943666906419" green="1" blue="0.70203048440431259" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="BZt-eX-Ng9"/>
+                                            <constraint firstAttribute="height" constant="30" id="nuE-1e-tvl"/>
+                                        </constraints>
+                                        <state key="normal" title="Banglore"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="BZt-eX-Ng9"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="widthClass=compact" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="150" width="200" height="0.0"/>
+                                            <mask key="constraints">
+                                                <include reference="BZt-eX-Ng9"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <action selector="cityTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tPW-Nn-Bl1"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <rect key="contentStretch" x="0.80000000000000004" y="0.40000000000000002" width="1" height="1"/>
+                                <variation key="heightClass=compact-widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="141" y="40" width="146" height="150"/>
+                                </variation>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="xmZ-Iu-2yB" secondAttribute="trailing" constant="80" id="OEa-4E-Olr"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="xmZ-Iu-2yB" secondAttribute="trailing" constant="80" id="Shd-ah-C8r"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="xmZ-Iu-2yB" secondAttribute="bottom" constant="394" id="asc-uT-OUS"/>
+                            <constraint firstItem="xmZ-Iu-2yB" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="36" id="d8P-UG-rWN"/>
+                            <constraint firstItem="xmZ-Iu-2yB" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="36" id="fYy-ro-VRZ"/>
+                            <constraint firstItem="xmZ-Iu-2yB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="80" id="h9z-Sc-Qit"/>
+                            <constraint firstItem="xmZ-Iu-2yB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="80" id="ncL-l6-1Fo"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="xmZ-Iu-2yB" secondAttribute="bottom" constant="394" id="wBR-YD-abC"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="OEa-4E-Olr"/>
+                                <exclude reference="Shd-ah-C8r"/>
+                                <exclude reference="d8P-UG-rWN"/>
+                                <exclude reference="fYy-ro-VRZ"/>
+                                <exclude reference="h9z-Sc-Qit"/>
+                                <exclude reference="ncL-l6-1Fo"/>
+                                <exclude reference="asc-uT-OUS"/>
+                                <exclude reference="wBR-YD-abC"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="OEa-4E-Olr"/>
+                                <include reference="Shd-ah-C8r"/>
+                                <include reference="d8P-UG-rWN"/>
+                                <include reference="fYy-ro-VRZ"/>
+                                <include reference="h9z-Sc-Qit"/>
+                                <include reference="ncL-l6-1Fo"/>
+                                <include reference="asc-uT-OUS"/>
+                                <include reference="wBR-YD-abC"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outletCollection property="cityButtons" destination="FCz-gL-4kS" collectionClass="NSMutableArray" id="1zQ-Dt-iDb"/>
+                        <outletCollection property="cityButtons" destination="7eP-IE-Ryc" collectionClass="NSMutableArray" id="oFr-fg-fu7"/>
+                        <outletCollection property="cityButtons" destination="1ho-p2-14z" collectionClass="NSMutableArray" id="GkR-Gk-Dt0"/>
+                        <outletCollection property="cityButtons" destination="hqL-OB-FRg" collectionClass="NSMutableArray" id="oD4-1i-cAd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
